@@ -36,32 +36,31 @@ class TestController extends Controller
 //        });
 //        die;
         echo 'Hello world';
-        $user = User::find(1);
+        $user = new User();
+        $contact = new Contact();
 //        $user = DB::select('select * from users where id = ?', array(1));
 //        $user = DB::table('users')->get();
-        $contact = User::find(1)->contact()->withTrashed()->get();
-//        $contact->delete();
-        dd($contact);
-
-//        $trashed_contact = Contact::withTrashed()->get();
-//        dd($trashed_contact);
+//        $contact = User::find(1)->contact()->withTrashed()->get();
+//        $contact = User::find(1)->contact()->first();
 //        $contact->delete();
 //        $contact->forceDelete();
+
+//        $trashed_contact = Contact::withTrashed()
+//                        ->where('phone', 'like', '%8624%')
+//                        ->orderBy('created_at','asc')
+//                        ->first();
+//        $trashed_contact->restore();
+//        $contact = Contact::findOrFail(1);
+//        $model = App\Flight::where('legs', '>', 100)->firstOrFail();
+
+        $contact = User::find(1)->contact;
+//        $contact->history()->get();
+        dd($contact);
 
         // 测试 直接更新 contact 的 address
 //        $contact->address = '澳门路477号9号楼401室';
 //        $contact->save();
 
-
-
-
-//        $post = Post::find(1);
-
-        echo '<pre>';
-//        print_r($contact->trashed());
-        echo '<br>';
-//        print_r($contact);
-//        print_r($post);
     }
 
     /**

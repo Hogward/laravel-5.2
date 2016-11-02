@@ -18,8 +18,11 @@ Route::get('/', function () {
 //Route::get('/dbtest',function(){
 //    return view('dbtest');
 //});
-
 Route::any('/test','TestController@index');
+
+//Route::get('/test/{id}',function ($id){
+//    return \App\Contact::findOrFail($id);
+//});
 Route::any('/user','UserController@index');
 
 //Route::resource('test', 'TestController');
