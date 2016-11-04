@@ -16,7 +16,15 @@ class Contact extends Model
      */
 //    protected $deleted_at = ['deleted_at'];
 
+    /**
+     * 可以被批量赋值的属性.
+     *
+     * @var array
+     */
+    protected $fillable = ['phone', 'address'];
+
     /*
+     * 一对一
      * 获取关联到 Contact 的 User
      * */
     public function user(){
