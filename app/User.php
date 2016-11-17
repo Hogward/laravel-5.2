@@ -45,4 +45,12 @@ class User extends Authenticatable
     public function posts(){
         return $this->hasMany('App\Post');
     }
+
+    /*
+     *  多对多
+     *  用户角色
+     * */
+    public function roles(){
+        return $this->belongsToMany('App\Role')->withTimestamps();
+    }
 }

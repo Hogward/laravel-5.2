@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Contact;
 use App\Post;
+use App\Role;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -20,12 +21,24 @@ class TestController extends Controller
      */
     public function index()
     {
-        // 一对一 测试
         $user = new User();
+        $role = new Role();
         $contact = new Contact();
         $post = new Post();
+
+        $user = $user->find(1);
+        foreach($user->roles as $role){
+            dd($role->pivot);
+        }
+
+
+        //多对多测试
+//        Schema::table('role_user', function ($table) {
+//            $table->timestamps();
+//        });
+
+        // 一对一 测试
 //        echo 'ORM OneToOne';
-//        Schema::table('posts',functio 0
 //        echo '使用 Schema::create 创建一个数据库的表：';
 //        Schema::create('posts', function($table)
 //        {
@@ -61,8 +74,8 @@ class TestController extends Controller
 //
 //        $rtn = $user->contact;
 //        dd($user->contact);
-        echo 'ORM OneToMany';
-        $user = $user->find(1);
+//        echo 'ORM OneToMany';
+//        $user = $user->find(1);
 //        $posts = $user->find(1)->posts;
 //        $posts = $user->find(1)->posts()->get();
 //        $user = $post->find(1)->user;
@@ -77,7 +90,7 @@ class TestController extends Controller
 //        );
 //        $tempArr = [new Post($postArr1), new Post($postArr2)];
 //        $posts = $user->posts()->withTrashed()->get();
-        $posts = $user->posts;
+//        $posts = $user->posts;
 //        foreach ($posts as $_item){
 //            $_item->title = 'Post Title';
 //            $_item->save();
@@ -95,8 +108,6 @@ class TestController extends Controller
 //       $user = $user->find(1);
 //        $user->contact->phone = '1345678901';
 //        $user->save();
-
-        dd($contact->findOrFail(1));
 
         // 测试 直接更新 contact 的 address
 //        $contact->address = '澳门路477号9号楼401室';
