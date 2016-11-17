@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8b776216-2265-4b63-8d99-921772545c4d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Role.php" afterPath="$PROJECT_DIR$/app/Role.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
     </list>
     <ignored path="laravel-5.2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -248,7 +241,7 @@
       <workItem from="1478063515344" duration="21761000" />
       <workItem from="1478250334478" duration="4344000" />
       <workItem from="1478494994560" duration="2486000" />
-      <workItem from="1478753190775" duration="8356000" />
+      <workItem from="1478753190775" duration="8389000" />
     </task>
     <task id="LOCAL-00001" summary="5.2">
       <created>1478003929781</created>
@@ -278,11 +271,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478258899642</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Laravel 多对多">
+      <created>1479385188303</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1479385188303</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61165000" />
+    <option name="totallyTimeSpent" value="61198000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -336,7 +336,8 @@
     <MESSAGE value="Laravel ORM 一对一 DEV DEBUG" />
     <MESSAGE value="Laravel ORM 一对多" />
     <MESSAGE value="Laravel 用户权限" />
-    <option name="LAST_COMMIT_MESSAGE" value="Laravel 用户权限" />
+    <MESSAGE value="Laravel 多对多" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laravel 多对多" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
