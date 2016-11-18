@@ -51,6 +51,6 @@ class User extends Authenticatable
      *  用户角色
      * */
     public function roles(){
-        return $this->belongsToMany('App\Role')->withTimestamps();
+        return $this->belongsToMany('App\Role')->withTimestamps()->withPivot('start_time','end_time');
     }
 }

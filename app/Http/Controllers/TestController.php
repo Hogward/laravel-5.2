@@ -29,12 +29,15 @@ class TestController extends Controller
         $user = $user->find(1);
         foreach($user->roles as $role){
             dd($role->pivot);
+            dd($role);
         }
 
 
         //多对多测试
 //        Schema::table('role_user', function ($table) {
-//            $table->timestamps();
+////            $table->timestamps();
+//            $table->dateTime('start_time');
+//            $table->dateTime('end_time');
 //        });
 
         // 一对一 测试
