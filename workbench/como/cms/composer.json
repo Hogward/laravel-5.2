@@ -1,0 +1,23 @@
+{
+    "name": "como/cms",
+    "description": "",
+    "authors": [
+        {
+            "name": "xwk",
+            "email": "lin.su@comonetwork.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-4": {
+            "Como\\Cms\\": "src/Como/Cms"
+        }
+    },
+    "minimum-stability": "stable"
+}
